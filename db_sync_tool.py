@@ -340,6 +340,5 @@ SET FOREIGN_KEY_CHECKS = 0;\n
 
 if __name__ == "__main__":
     root = tk.Tk()
-    root.iconbitmap("app_icon.ico")
     app = SchemaSyncApp(root)
     root.mainloop()
