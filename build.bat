@@ -4,8 +4,8 @@ TITLE Nuitka Packaging for DB Sync Tool
 REM Clean Old Cache...
 echo Cleaning up old build directories...
 rmdir /s /q dist
-rmdir /s /q db_sync_tool.build
-rmdir /s /q db_sync_tool.onefile-build
+rmdir /s /q main.build
+rmdir /s /q main.onefile-build
 
 echo.
 echo Starting Nuitka packaging process...
@@ -20,7 +20,7 @@ python -m nuitka ^
     --output-dir=dist ^
     --output-filename=MySQL_DB_Sync.exe ^
     --windows-icon-from-ico=app_icon.ico ^
-    db_sync_tool.py
+    main.py
 
 REM Check Build Result...
 if errorlevel 1 (
